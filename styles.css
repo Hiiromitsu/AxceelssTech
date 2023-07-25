@@ -1,0 +1,294 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  transition: background-color 0.3s ease;
+  background-color: #f2f2f2; /* Cor de fundo padrão (light mode) */
+  color: #000000; /* Cor de texto padrão (light mode) */
+}
+
+body.dark-mode {
+  background-color: #2b2b2b; /* Cor de fundo para dark mode */
+  color: #f2f2f2; /* Cor de texto para dark mode */
+}
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292929;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  color: #f2f2f2;
+  font-size: 24px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #fff;
+  color: #282929;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f2f2f2;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 400px;
+  color: #f2f2f2;
+}
+
+.hero-content h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.hero-content p {
+  font-size: 16px;
+}
+
+.hero-image img {
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-top: 20px;
+  background-color: #fff;
+  color: #ff0000;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background-color: #f2f2f2;
+}
+
+.features-section {
+  padding: 40px;
+  background-color: #f2f2f2;
+  color: #000000;
+  border-radius: 8px;
+}
+
+.features-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.feature {
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 8px;
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+}
+
+.feature h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.testimonials-section {
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.testimonials-section h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modpack-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #141414; /* Cor de fundo do modpack */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+.modpack-content {
+  flex: 1;
+  max-width: 400px;
+  color: #f2f2f2;
+}
+
+.modpack-content h2 {
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.modpack-content p {
+  font-size: 16px;
+}
+
+.modpack-image img {
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilos para os pop-ups (modals) */
+.modal {
+  display: none; /* Por padrão, escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  z-index: 9999; /* Coloca o pop-up acima de outros elementos */
+  backdrop-filter: blur(5px); /* Efeito de desfoque */
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #000000; /* Cor de texto para light mode */
+}
+
+.modal.dark-mode .modal-content {
+  background-color: #2b2b2b; /* Cor de fundo para dark mode */
+  color: #f2f2f2; /* Cor de texto para dark mode */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #000000; /* Cor de texto para light mode */
+}
+
+.modal.dark-mode .close-button {
+  color: #f2f2f2; /* Cor de texto para dark mode */
+}
+
+/* Estilos para o botão de alternar Modo Escuro */
+.dark-mode-toggle {
+  position: relative;
+  padding: 8px 12px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode-toggle:hover {
+  background-color: #ff0000;
+}
+
+/* Estilos para os botões de download no modo escuro */
+body.dark-mode .cta-button {
+  background-color: #ff0000;
+  color: #f2f2f2; /* Cor de texto para botões de download no modo escuro */
+}
+
+/* Estilos para as características e benefícios no modo escuro */
+body.dark-mode .features-section {
+  background-color: #2b2b2b; /* Cor de fundo para dark mode */
+  color: #f2f2f2; /* Cor de texto para dark mode */
+}
+
+body.dark-mode .features-section h2 {
+  color: #f2f2f2; /* Cor de texto para título no modo escuro */
+}
+
+body.dark-mode .feature {
+  background-color: #2b2b2b; /* Cor de fundo para características no modo escuro */
+  color: #f2f2f2; /* Cor de texto para características no modo escuro */
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.scale-up {
+  animation: scaleUp 0.5s ease forwards;
+}

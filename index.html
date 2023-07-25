@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Axceelss Tech</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/10541/10541479.png">
+</head>
+<body>
+  <header>
+    <h1 class="fade-in">Optmizer Computer</h1>
+    <button id="darkModeToggle" class="dark-mode-toggle fade-in">Modo Escuro</button>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-content fade-in">
+        <h2>Bem-vindo ao AxceelssTech</h2>
+        <p>Encontre os melhores mods para melhorar sua experiência no Minecraft.</p>
+        <a href="#features" class="cta-button">Conheça as Características</a>
+      </div>
+      <div class="hero-image scale-up">
+        <img src="https://i.ytimg.com/vi/rp_jL9JpoDk/maxresdefault.jpg" alt="Imagem Hero">
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <h2 class="fade-in">Recomendado</h2>
+      <div class="features-grid">
+        <div class="feature fade-in scale-up">
+          <img src="https://desapegogames.com.br/assets/site/imagens/anuncios/2022/03/03/22ab41401215945c1652dc0b339c0aba.jpg" alt="Optifine Icon">
+          <h3>Optifine</h3>
+          <p>Optifine é um mod para Minecraft que melhora o desempenho e adiciona recursos gráficos.</p>
+          <a href="#download" class="cta-button" id="optifineButton">Baixe Agora</a>
+        </div>
+        <div class="feature fade-in scale-up">
+          <img src="https://media.forgecdn.net/avatars/284/773/637298471098686391.png" alt="Sodium Icon">
+          <h3>Sodium</h3>
+          <p>Sodium é um mod de otimização focado em melhorar o desempenho gráfico no Minecraft.</p>
+          <a href="#download" class="cta-button" id="sodiumButton">Baixe Agora</a>
+        </div>
+        <div class="feature fade-in scale-up">
+          <img src="https://raw.githubusercontent.com/IrisShaders/Iris/trunk/docs/iris-logo-transparent.png" alt="Iris Shader Icon">
+          <h3>Iris Shader</h3>
+          <p>Iris Shader é um shader pack para melhorar a qualidade gráfica e iluminação no Minecraft.</p>
+          <a href="#download" class="cta-button" id="irisButton">Baixe Agora</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section">
+      <h2 class="fade-in">Depoimentos</h2>
+      <div class="testimonial fade-in scale-up">
+        <img src="https://wallpapercave.com/wp/wp10229057.jpg" alt="Depoimento 1">
+        <p>Funcionou perfeitamente. Obrigado! Recomendo muito para as pessoas usarem.</p>
+      </div>
+      <div class="testimonial fade-in scale-up">
+        <img src="https://64.media.tumblr.com/34922151cbe3e471d8168fa29e5391ea/tumblr_poxqsgoLQI1u1ycqw_400.jpg" alt="Depoimento 2">
+        <p>Antes, eu jogava o Minecraft com 40 fps, mas hoje estou jogando com 80 a 150 fps. Muito obrigada!</p>
+      </div>
+    </section>
+
+    <!-- Modpack de Otimização do Minecraft -->
+    <section class="modpack-section">
+      <div class="modpack-content fade-in">
+        <h2>Optimizer AxceelssTech</h2>
+        <p>O programa de otimização é uma ferramenta inovadora projetada para melhorar a experiência online e o desempenho no jogo Minecraft.</p>
+        <a href="#download" class="cta-button">Baixe Agora</a>
+      </div>
+      <div class="modpack-image scale-up">
+        <img src="https://i.ytimg.com/vi/A_yzc9vSwOA/maxresdefault.jpg" alt="Modpack de Otimização">
+      </div>
+    </section>
+  </main>
+
+  <!-- Pop-up (Modal) para instruções -->
+  <div class="modal" id="modalOptifine">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('modalOptifine')">&times;</span>
+      <h2>Instruções para Optifine</h2>
+      <p>1. Baixe o Optifine através do link abaixo.</p>
+      <p>2. Execute o arquivo .jar para instalar o Optifine.</p>
+      <p>3. Abra o Minecraft e selecione o perfil do Optifine na seção de instalações.</p>
+      <a href="https://optifine.net/downloads" class="cta-button">Download Optifine</a>
+    </div>
+  </div>
+
+  <!-- Pop-up (Modal) para instruções -->
+  <div class="modal" id="modalSodium">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('modalSodium')">&times;</span>
+      <h2>Instruções para Sodium</h2>
+      <p>1. Baixe o Sodium através do link abaixo.</p>
+      <p>2. Coloque o arquivo .jar na pasta "mods" do seu cliente do Minecraft.</p>
+      <p>3. Reinicie o Minecraft para ativar o Sodium.</p>
+      <a href="https://modrinth.com/mod/sodium/version/mc1.20-0.4.10" class="cta-button">Download Sodium</a>
+    </div>
+  </div>
+
+  <!-- Pop-up (Modal) para instruções -->
+  <div class="modal" id="modalIris">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal('modalIris')">&times;</span>
+      <h2>Instruções para Iris Shader</h2>
+      <p>1. Baixe o Iris Shader através do link abaixo.</p>
+      <p>2. Coloque o arquivo .zip na pasta "shaderpacks" do seu cliente do Minecraft.</p>
+      <p>3. Selecione o shader pack Iris Shader nas configurações do Minecraft.</p>
+      <a href="https://irisshaders.dev" class="cta-button">Download Iris Shader</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
